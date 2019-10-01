@@ -1,4 +1,4 @@
-(ns clojureserver.core
+(ns core
   (:require [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
             [ring.middleware.reload :refer [wrap-reload]]
             [compojure.core :refer :all]

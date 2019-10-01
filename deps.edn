@@ -15,4 +15,4 @@
          ;; simple HTML generator
          hiccup {:mvn/version "1.0.5"}
 }
-         :paths [src]}
+         :paths ["src/clojureserver"]}
