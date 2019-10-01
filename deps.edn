@@ -15,4 +15,7 @@
          ;; simple HTML generator
          hiccup {:mvn/version "1.0.5"}
 }
-         :paths ["src/clojureserver"]}
+         :paths ["src/clojureserver"]
+         :aliases {:depstar
+              {:extra-deps
+                 {seancorfield/depstar {:mvn/version "0.1.5"}}}}}

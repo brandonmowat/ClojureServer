@@ -1,0 +1,1 @@
+web: java -cp clojureserver.jar clojure.main -m clojureserver.core
