@@ -14,5 +14,15 @@
          org.immutant/scheduling {:mvn/version "2.1.10"}
          ;; simple HTML generator
          hiccup {:mvn/version "1.0.5"}
-}
-         :paths ["src/clojureserver"]}
+         }
+ :paths ["src"]
+ :aliases   {:uberjar
+             {:extra-deps
+              {luchiniatwork/cambada {:mvn/version "1.0.0"}}
+              :main-opts ["-m" "cambada.uberjar"
+                          "-m" "clojureserver.core"]}
+             :run
+             {:main-opts ["-m" "clojureserver.core"]}}
+  :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
+              "clojars" {:url "https://repo.clojars.org/"}}
+ }
