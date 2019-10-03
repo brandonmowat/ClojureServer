@@ -1,1 +1,1 @@
-web: java -cp clojureserver.jar clojure.main -m clojureserver.core
+web: java -jar target/ClojureServer-1.0.0-SNAPSHOT-standalone.jar

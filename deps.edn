@@ -15,8 +15,14 @@
          ;; simple HTML generator
          hiccup {:mvn/version "1.0.5"}
 }
-         :paths ["src/clojureserver"]
-         :aliases {:depstar
-              {:extra-deps
-                 {com.healthfinch/depstar {:git/url "https://github.com/healthfinch/depstar.git"
-                                           :sha "4aa7b35189693feebc7d7e4a180b8af0326c9164"}}}}}
+         :paths ["src"]
+         :aliases   {:uberjar
+                     {:extra-deps
+                     {luchiniatwork/cambada {:mvn/version "1.0.0"}}
+                     :main-opts ["-m" "cambada.uberjar"
+                                 "-m" "clojureserver.core"]}
+                     :run
+                     {:main-opts ["-m" "clojureserver.core"]}}
+
+         :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
+                     "clojars" {:url "https://repo.clojars.org/"}}}
