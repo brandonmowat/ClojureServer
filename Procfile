@@ -1,1 +1,1 @@
-web: java -jar dist/ClojureServer-1.0.0-SNAPSHOT-standalone.jar
+web: cat target/ClojureServer-1.0.0-SNAPSHOT-standalone.jar > dist/ClojureServer-1.0.0-SNAPSHOT-standalone.jar && java -jar dist/ClojureServer-1.0.0-SNAPSHOT-standalone.jar
