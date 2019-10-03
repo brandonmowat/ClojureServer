@@ -17,4 +17,4 @@
   (def stop-server
     (-> (wrap-reload #'clojureserver)
         (wrap-defaults (assoc-in site-defaults [:security :anti-forgery] false))
-        (run-server {:port (System/getenv "PORT")}))))
+        (run-server {:port (Integer/parseInt (System/getenv "PORT"))}))))
