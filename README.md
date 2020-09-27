@@ -1,6 +1,6 @@
 # ClojureServer
 
-A simple base deployable server, written in Clojure
+A base project for writing simple clojure web apps.
 
 ## Purpose
 
